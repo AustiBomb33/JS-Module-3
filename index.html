@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>JS Module 3 Project</title>
-    <script src="Objects.js"></script>
-</head>
-<body>
-    <h1>Vacation Rentals</h1>
-    <h2>Standard</h2>
-    <div >
-        <p id="1"></p>
-        <p id="2"></p>
-    </div>
-    <h2>Special Rate</h2>
-    <div>
-        <p id="3"></p>
-    </div>
-    <h2>Super Host</h2>
-    <div>
-        <p id="4"></p>
-    </div>
-    <script>
-        //2 vacation rental properties
-        let property1 = new VacationRentalProperty("Holiday Inn", 199.99, 3.8, "Niagara", "2", true, "Ice Machine");
-        let property2 = new VacationRentalProperty("Best Western", 219.79, 4, "Toronto", 2, true, "Swimming Pool");
-        //1 Special Rate Property
-        let specialProperty = new SpecialRateProperty("Trivago", 220, 4.2, "Hamilton", 2, true, "none");
-        //1 superHost property
-        let superProperty = new SuperHostProperty("AirBnB", 300, 4.9, "Beverly Hills", 4, true, "Hot Tub, Swimming Pool, View of city");
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Module 3 Project</title>
+        <script src="Objects.js"></script>
+    </head>
+    <body>
+        <h1>Vacation Rentals</h1>
+        <h2>Standard</h2>
+        <div>
+            <p id="1"></p>
+            <p id="2"></p>
+        </div>
+        <h2>Special Rate</h2>
+        <div>
+            <p id="3"></p>
+        </div>
+        <h2>Super Host</h2>
+        <div>
+            <p id="4"></p>
+        </div>
+        <script>
+            //2 vacation rental properties
+            let property1 = new VacationRentalProperty("Holiday Inn", 199.99, 3.8, "Niagara", "2", true, "Ice Machine");
+            let property2 = new VacationRentalProperty("Best Western", 219.79, 4, "Toronto", 2, true, "Swimming Pool");
+            //1 Special Rate Property
+            let specialProperty = new SpecialRateProperty("Trivago", 220, 4.2, "Hamilton", 2, true, "none");
+            //1 superHost property
+            let superProperty = new SuperHostProperty("AirBnB", 300, 4.9, "Beverly Hills", 4, true, "Hot Tub, Swimming Pool, View of city");
 
-        document.getElementById("1").innerHTML = property1.descriptionText();
-        document.getElementById("2").innerHTML = property2.descriptionText();
-        document.getElementById("3").innerHTML = specialProperty.descriptionText();
-        document.getElementById("4").innerHTML = superProperty.descriptionText();
-    </script>
-</body>
+            document.getElementById("1").innerHTML = property1.descriptionText();
+            document.getElementById("2").innerHTML = property2.descriptionText();
+            document.getElementById("3").innerHTML = specialProperty.descriptionText();
+            document.getElementById("4").innerHTML = superProperty.descriptionText();
+        </script>
+    </body>
 </html>
