@@ -24,7 +24,7 @@ VacationRentalProperty.prototype.checkAvailability = function () {
 VacationRentalProperty.prototype.descriptionText = function() {
     let rtrnString = this.name + " is a rental property with a rating of " + this.rating + ", listed for $" + this.price;
     if(this.type == "Special Rate") {
-        rtrnString += ". This property is available for 20% off, at " + this.price * 0.8;
+        rtrnString += ". This property is available for 20% off, at $" + this.price * 0.8;
     }
     if(this.type == "superhost"){
         rtrnString += ". This property is very highly rated, and is a Super Host!"
